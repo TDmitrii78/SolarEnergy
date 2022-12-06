@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.fon {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: white;
+}
+h1 {
+    font-size: 2.636rem;        /*Тут шрифт 64px. 64px / 0.052 =3.328vw */
+}
+h2 {
+    font-size: 1.729rem;      /* 42px 2.18vw  */
+} 
+h3 {
+    font-size: 0.988rem;    /* 24px  1.248vw; */
+} 
+h4 {
+    font-size: 0.741rem;     /* 18px   0.936vw; */
+}
+p {
+    font-size: 0.576rem;   /*  14px   0.728vw*/
+}
+.main-flex-conteiner {       /* Оснвной флекс контейнер */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block1FLEX {                         /* первый встроиный флекс контейнер */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("picture/фон.jpg");
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 46.8vw;  /* Реальный размер фото 1920*900. Для того что бы сохранить пропорции
+                   на зкране:
+                   100vw = 1920px, значит 100vw / 1920px = 0.052
+                   Теперь ширина картинки у нас 900px, значит чтоб сохранить 
+                   пропорции нужно: 900px * 0,052 = 46,8vw */
+} 
+.block1boxlogo {                   /* Логотип картинка */
+    width: 9.464%;
+    height: 2.652vw;                             /* Везде высота считается с полученным */ 
+    background-image: url("picture/лого.png");  /* выше коэфициентом 0,052, чтоб сохранить*/
+    background-size: cover;                     /*пропорции. В данном случае высота */
+    margin-top: 3.64vw;               /*блока 51px. 51px * 0.052 = 2.65vw */
+}                   /* то есть все высоты (отступы, высоты блоков и тд) привязаны к ширине экрана*/
+
+.block1boxtext1 {                     /* первая строка текста */
+    margin-top: 7.28vw;
+    font-size: 0.93vw;                       /* Размер шрифта тоже привязан к ширине экрана */
+}                             /* в данном случае высота шрифта 18px. Значит 18 * 0,052 = 0,93vw */
+.block1boxtext2 {                      /* вторая строка текста */
+    height: 4.472vw;
+    font-size: 3.328vw;  
+}
+.size1 {
+    font-size: 3.328vw;  
+}
+.block1boxtext3 {                     /* третья строка текста */
+    height: 2.964vw;
+}
+.size2 {
+    font-size: 2.18vw;     
+}
+.block1button1 {                       /* Кнопка контейнер */
+    position: relative;
+    background-color: transparent;
+    border-radius: 5%;
+    width: 15.964%;
+    height: 5.2vw;
+    margin-top: 2.6vw;
+    border-width: 0.052vw;
+}
+.block1button1Img {                       /* Картинка на кнопке  */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+}
+.block1Button1Text {                    /* Текст на кнопке */
+    color: white;
+    margin-top: 3.068vw;
+    font-size: 0.93vw;  
+}
+.block1boxsocialFlex {                   /* Флекс контейнер для ссылок на соц сети */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 13vw;
+    width: 8.632%;
+    height: 1.756vw;
+}
+.link1 {                            /* ссылка на инстаграмм  */
+    background-image: url(picture/instagram.png);
+    background-size: cover;
+    width: 1.534vw;
+    height: 1.534vw;
+}
+.link2 {                        /* ссылка на телеграмм */
+    background-image: url(picture/telegram.png);
+    background-size: cover;
+    width: 1.534vw;
+    height: 1.144vw;
+}
+.link3 {                   /* ссылка ватсапп */
+    background-image: url(picture/whatsapp.png);
+    background-size: cover;
+    width: 1.534vw;
+    height: 1.534vw;
+}
+.link4 {                    /* ссылка фэйсбук  */
+    background-image: url(picture/facebook.png);
+    background-size: cover;
+    width: 0.884vw;
+    height: 1.56vw;
+}
+.block2FLEX {                     /* блок 2 "УСЛУГИ"  */
+    display: flex;
+    justify-content: center;
+    margin-top: 7.8%;
+    flex-wrap: wrap;
+}
+.block2child1 {
+    width: 337px;
+    height: 502px;
+    padding-right: 58px;
+}
+.block2child2 {
+    width: 395x;
+    height: 502px;
+}
+.block2Img1 {
+    padding-top: 61px;
+    height: 441px;
+}
+.Otstup15{
+    padding-bottom: 9.88px;
+}
+.Otstup50 {
+    padding-bottom: 32.95px;
+}
+.block3FLEX {
+    display: flex;
+    justify-content: center;
+    margin-top: 7.8%;
+    flex-wrap: wrap;
+}
+.block3child1 {
+    height: 504px;
+    width: 181px;
+}
+.block3child2 {
+    height: 504px;
+    width: 214px;
+}
+.block3child3 {
+    height: 504px;
+    width: 395px;
+}
+.otstuptop93 {
+    padding-top: 61px;
+}
+.otstuptop125 {
+    padding-top: 83px; 
+}
+.otstuptop100 {
+    padding-top: 65px; 
+}
+.otstuptop5 {
+    padding-top: 3px; 
+}
+.otstuptop19 {
+    padding-top: 12px; 
+}
+#otstupright90 {
+    padding-right: 59px;
+}
+.otstuptop86 {
+    padding-top: 56px; 
+}
+.block3img1 {
+    width: 100%;
+    padding-top: 11px;
+}
+.otstuptop60 {
+    padding-top: 39px; 
+}
+#otstupright40 {
+    padding-right: 27px;
+}
+
+.block4FLEX {
+    display: flex;
+    background-image: url(picture/Rectangle\ 10.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 26vw;
+    margin-top: 7.8%;
+    justify-content: center;
+    align-items: center;
+}
+.block4boxtext1 {
+    text-align: center;
+    color: white;
+    width: 33%;
+    height: 12vw;
+    font-size: 2.18vw;
+}
+.block5FLEX {
+    display: flex;
+    justify-content: center;
+    margin-top: 7.8%;
+    flex-wrap: wrap;
+}
+.block5child1 {
+    width: 395px;
+    height: 330px;
+}
+.block5child2 {
+    width: 395px;
+    height: 330px;
+}
+.block5img1 {
+    width: 336px;
+}
+.Otstupy {
+    padding-left: 33px;
+    padding-bottom: 10px;
+}
+.block5button1 {
+    position: relative;
+    left: 0px;
+    top: 32px;
+    background-color: transparent;
+    width: 202px;
+    height: 66px;
+    border-width: 0px;
+}
+.block5button1Img {
+    height: 100%;
+}
+.link5 {
+    padding-bottom: 10px;
+    width: 26px;
+    height: 10px;
+    background-image: url(picture/Arrow\ 4.png);
+    background-size: cover;
+}
+.link6 {
+    width: 26px;
+    height: 10px;
+    background-image: url(picture/Arrow\ 3.png);
+    background-size: cover;
+}
+.block6FLEX {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7.8%;
+}
+.block6child1 {
+    width: 395px;
+    height: 481px;
+
+}
+.block6child2 {
+    width: 395px;
+    height: 481px;
+
+}
+.grey {
+    color: grey;
+    padding-bottom: 7.2px;
+}
+#otstupTop {
+    margin-top: 20px;
+}
+.limit {
+    width: 336px;
+}
+.block7FLEX {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.8%;
+    background-size: cover;
+    width: 100%;
+    height: 38vw;
+    background-image: url(picture/Rectangle\ 13.png);
+    color: white;
+}
+.block7childFLEX1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.block1 {
+    width: 31.2vw;
+    height: 25vw;
+}
+.block2 {
+    width: 31.2vw;
+    height: 25vw;
+}
+.OtstupyFont {
+    margin-top: 3.64vw;
+    margin-bottom: 3.12vw;
+    font-size: 1.248vw;
+}
+.Otstup30Font {
+    font-size: 0.936vw;
+    margin-bottom: 1.56vw;
+}
+.otstup11font {
+    font-size: 0.728vw;
+    margin-bottom: 0.572vw;
+}
+.LINEblock7 {
+    background-image: url(picture/Line\ 2.png);
+    background-size: 100%;
+    height: 0.1vw;
+    width: 26.52vw;
+}
+.Button1block7 {
+    margin-top: 3.15vw;
+    background-image: url(picture/кнопка\(3\).png);
+    width: 10.7vw;
+    height: 5.7vw;
+    background-color: transparent;
+    background-size: cover;
+    border-radius: 5%;
+    border-width: 0.052vw;
+}
+.Block3 {
+    margin-top: 7.8vw;
+}
